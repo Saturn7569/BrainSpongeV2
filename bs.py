@@ -1,6 +1,7 @@
 import sys
 
 from src.parser import parse_line
+from src.interpreter import interpret, Instance
 
 if len(sys.argv) != 2:
     print("Invalid run command!")
@@ -24,4 +25,11 @@ if err:
     print(f"{err[0]} ERROR: {err[1]}")
     sys.exit(1)
 
-print(tok)
+# print(tok)
+
+instance = Instance()
+
+err = interpret(tok, instance)
+if err:
+    print(f"{err[0]} ERROR: {err[1]}")
+    sys.exit(1)
