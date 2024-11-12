@@ -24,4 +24,24 @@ Here is a list of the commands:
 - `>`: move the pointer to the right
 - `<`: move the pointer to the left
 - `.`: output the current character as ascii
+- `[`: start a loop (the program will loop until the current character is 0)
+- `]`: end a loop
 - `;`: output the current number followed by a space (eg. `"75 "`)
+
+### Example program
+
+```
+++++++++[>+++++++++<-]>.
+<+++++[>++++++<-]>+++.
+```
+If we now run this code we will get this:
+```
+Hi
+```
+
+### Explanation
+
+So we want to print `Hi`.
+To do this, we need the ASCII values of all the letters for `Hi` they are `72` and `105`.
+We need to get one of the memory cells to `72` and `105`.
+Now we could just insert 72 times + but we can use loops.
