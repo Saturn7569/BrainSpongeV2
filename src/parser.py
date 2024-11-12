@@ -1,4 +1,4 @@
-chars = {"LOOP_START": "[", "LOOP_END": "]", "valid_chars": "+-*/[].,"}
+chars = {"LOOP_START": "[", "LOOP_END": "]", "valid_chars": "+-<>[].,"}
 
 
 def parse_line(_line, _pos=0, _loop=False):
@@ -15,6 +15,9 @@ def parse_line(_line, _pos=0, _loop=False):
             break
         current_token = _line[pos]
         if current_token.isspace():
+            pos += 1
+            continue
+        if current_token not in chars["valid_chars"]:
             pos += 1
             continue
         if current_token == chars["LOOP_END"]:
