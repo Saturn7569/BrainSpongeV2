@@ -1,4 +1,4 @@
-chars = {"LOOP_START": "[", "LOOP_END": "]", "valid_chars": "+-<>[].,"}
+chars = {"LOOP_START": "[", "LOOP_END": "]", "valid_chars": "+-<>[].;"}
 
 
 def parse_line(_line, _pos=0, _loop=False):

@@ -45,7 +45,7 @@ def run_oper(oper: str, instance: Instance):
             instance.move_ptr(1)
         case "<":
             instance.move_ptr(-1)
-        case ",":
+        case ";":
             print(f"{instance.get_current()} ", end="")
         case ".":
             print(f"{chr(instance.get_current())}", end="")
