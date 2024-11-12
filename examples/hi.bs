@@ -1,0 +1,34 @@
+Increment the current by 8
+++++++++
+Start a loop
+[
+    Move left
+    >
+    Increment by 9
+    +++++++++
+    Move back and decrement the counter
+    <-
+]
+Move back to the actual character and output it
+>.
+
+Move back to the counter cell
+<
+Increment by 5
++++++
+Start a loop
+[
+    Move right
+    >
+    Increment the character by 6
+    ++++++
+    Move back and decrement the counter
+    <-
+]
+This loop puts 102 in the character cell
+Move to the character cell
+>
+Increment by 3 to set the cell to 105
++++
+Output the character
+.
